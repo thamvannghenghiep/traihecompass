@@ -247,7 +247,7 @@ a:focus {
     display: block;
     width: 35px;
     height: 4px;
-    background-color: #28A745FF;
+    background-color: #000f46;
     margin: 7px 0;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
@@ -262,7 +262,7 @@ a:focus {
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: #28A745FF;
+    background-color: #000f46;
     top: -10px;
     border-radius: 5px;
     -webkit-transition: all 0.3s;
@@ -319,7 +319,7 @@ a:focus {
 }
 
 .slider_section .detail-box {
-    color: #28A745FF;
+    color: #000f46;
     transform: translateY(-40px);
 }
 
@@ -527,13 +527,8 @@ a:focus {
     font-size: 18px !important;
 }
 
-.service_section .box .detail-box a {
-    color: #28A745FF;
-    font-weight: 600;
-}
-
 .service_section .sub_title {
-    color: #fefefe;
+    color: #000f46;
 }
 
 .service_section .box .detail-box a:hover {
@@ -542,7 +537,7 @@ a:focus {
 
 /* Custom banner text styling */
 .custom-banner-text h1 {
-    color: #28A745FF;
+    color: #000f46;
     font-weight: 900;
 }
 
@@ -554,7 +549,7 @@ a:focus {
 }
 
 .custom-banner-text .schedule {
-    color: #28A745FF;
+    color: #000f46;
     font-size: 15px;
 }
 
@@ -1229,6 +1224,76 @@ a:focus {
     font-weight: 800;
     margin-right: 10px;
     display: inline-block;
+}
+
+
+@media (max-width: 768px) {
+    /* Navbar chỉnh gọn lại */
+    .custom_nav-container .navbar-nav .nav-item .nav-link {
+        padding: 8px 10px;
+    }
+
+    /* Hero section chỉnh lại text */
+    .slider_section .detail-box h1 {
+        margin-top: 50px;
+        font-size: 3rem;
+        line-height: 1.2;
+    }
+
+    .slider_section .detail-box p.slogan {
+        font-size: 25px !important;
+        margin-bottom: 8px;
+    }
+
+    .slider_section .detail-box p.schedule {
+        font-size: 18px !important;
+    }
+
+    /* Hero background phủ kín */
+    .hero_area .hero_bg_box img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Khoảng cách các section */
+    .layout_padding {
+        padding: 40px 0;
+    }
+
+    /* Focus card khoảng cách */
+    .focus-card {
+        padding: 10px;
+        gap: 10px;
+    }
+
+    /* Box nội dung feedback */
+    .client_section .box .detail-box {
+        padding: 60px 15px 20px 15px;
+    }
+
+    /* Table ưu đãi gọn lại */
+    .offer-card {
+        padding: 20px;
+    }
+
+    /* Các ảnh section nho nhỏ */
+    .day-card img, .member-img img {
+        height: auto;
+        object-fit: cover;
+    }
+
+    /* Form đăng ký QR code nhỏ hơn */
+    .qr-img {
+        width: 90px;
+    }
+}
+
+.hero_area .hero_bg_box {
+    background: url('images/hero-bg-updated2.png') no-repeat center center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 
