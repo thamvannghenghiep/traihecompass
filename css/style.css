@@ -29,6 +29,7 @@ p {
 
 [data-aos] {
     overflow: hidden;
+    overflow-x: hidden;
 }
 
 /* Ngăn tất cả hiệu ứng translate của AOS gây tràn ngang */
@@ -118,6 +119,7 @@ a:focus {
 }
 
 /*header section*/
+/*header section*/
 .hero_area {
     position: relative;
     min-height: 100vh;
@@ -199,7 +201,7 @@ a:focus {
 
 .custom_nav-container .navbar-nav .nav-item .nav-link {
     padding: 5px 20px;
-    color: #000f46; /* Sửa thành màu tối */
+    color: #000f46;
     text-align: center;
     text-transform: uppercase;
     border-radius: 5px;
@@ -320,7 +322,7 @@ a:focus {
 
 .slider_section .detail-box {
     color: #000f46;
-    transform: translateY(-40px);
+    transform: translateY(-30px);
 }
 
 .slider_section .detail-box h1 {
@@ -340,21 +342,20 @@ a:focus {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin: 0 -5px;
-    margin-top: 25px;
+    margin: 25px -5px 0 -5px;
 }
 
 .slider_section .detail-box .btn-box a {
     margin: 5px;
     text-align: center;
-    width: 165px;
-    font-size: 17px;
+    width: 200px !important;
+    font-size: 18px;
 }
 
 .slider_section .detail-box .btn-box .btn1 {
     display: inline-block;
     padding: 10px 20px;
-    border-radius: 20px;
+    border-radius: 25px;
     border: none;
     position: relative;
     overflow: hidden;
@@ -380,8 +381,8 @@ a:focus {
         transform: scale(1);
     }
     50% {
-        box-shadow: 0 0 0 8px rgba(0, 15, 70, 0);
-        transform: scale(1.05);
+        box-shadow: 0 0 0 10px rgba(0, 15, 70, 0);
+        transform: scale(1.07);
     }
     100% {
         box-shadow: 0 0 0 0 rgba(0, 15, 70, 0);
@@ -412,8 +413,8 @@ a:focus {
 
 .slider_section .img-box img {
     width: 100%;
-    -webkit-animation: upDown 5s infinite;
-    animation: upDown 5s infinite;
+    -webkit-animation: upDown 4s infinite;
+    animation: upDown 4s infinite;
 }
 
 @-webkit-keyframes upDown {
@@ -1224,76 +1225,6 @@ a:focus {
     font-weight: 800;
     margin-right: 10px;
     display: inline-block;
-}
-
-
-@media (max-width: 768px) {
-    /* Navbar chỉnh gọn lại */
-    .custom_nav-container .navbar-nav .nav-item .nav-link {
-        padding: 8px 10px;
-    }
-
-    /* Hero section chỉnh lại text */
-    .slider_section .detail-box h1 {
-        margin-top: 50px;
-        font-size: 3rem;
-        line-height: 1.2;
-    }
-
-    .slider_section .detail-box p.slogan {
-        font-size: 25px !important;
-        margin-bottom: 8px;
-    }
-
-    .slider_section .detail-box p.schedule {
-        font-size: 18px !important;
-    }
-
-    /* Hero background phủ kín */
-    .hero_area .hero_bg_box img {
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
-    }
-
-    /* Khoảng cách các section */
-    .layout_padding {
-        padding: 40px 0;
-    }
-
-    /* Focus card khoảng cách */
-    .focus-card {
-        padding: 10px;
-        gap: 10px;
-    }
-
-    /* Box nội dung feedback */
-    .client_section .box .detail-box {
-        padding: 60px 15px 20px 15px;
-    }
-
-    /* Table ưu đãi gọn lại */
-    .offer-card {
-        padding: 20px;
-    }
-
-    /* Các ảnh section nho nhỏ */
-    .day-card img, .member-img img {
-        height: auto;
-        object-fit: cover;
-    }
-
-    /* Form đăng ký QR code nhỏ hơn */
-    .qr-img {
-        width: 90px;
-    }
-}
-
-.hero_area .hero_bg_box {
-    background: url('images/hero-bg-updated2.png') no-repeat center center;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 
